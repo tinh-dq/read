@@ -4,15 +4,16 @@
 }
 
 .btn {
-  background-color: #04aa6d;
+  background-color: #04aa6ddd;
   color: #ffffff;
   border-color: #04aa6d;
   font-size: 18px;
   font-family: "Source Sans Pro", sans-serif;
-  padding: 6px 18px;
-  border: 1px solid #cccccc;
-  border-radius: 5px;
-  min-width: 80px;
+  padding: 6px;
+  border: 1px solid #ffffff7f;
+  outline: none;
+  border-radius: 8px;
+  width: 100px;
   text-align: center;
 }
 
@@ -22,13 +23,24 @@
 .btn:hover {
   text-decoration: none;
 }
+.btn + .btn {
+  margin-left: calc(70% - 200px);
+}
+
+body {
+  margin-bottom: 120px;
+}
 
 .btn-group {
-  display: flex;
+  position: fixed;
+  bottom: 0;
+  right:0;
+  display: inline-flex;
   justify-content: center;
-  align-items: center;
-  height: 100px;
-  margin-bottom: 100px;
+  width: 100%;
+  height: max-content;
+  background: none;
+  margin-bottom: 30px;
 }
 
 h3 {
